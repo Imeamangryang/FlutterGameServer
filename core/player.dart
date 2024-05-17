@@ -1,6 +1,10 @@
 class Player {
-  Player({this.uuid});
-  final String? uuid;
+  Player();
+  late final String playerID;
+  late final String playername;
+  late double posx;
+  late double posy;
+  late final String character;
 
-  Map<String, dynamic> toJson() => {'uuid': uuid};
+  //Map<String, dynamic> toJson() => {'uuid': uuid};
 }
