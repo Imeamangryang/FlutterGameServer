@@ -52,6 +52,12 @@ class WebSocketManager {
 
           case 'MessageSend':
             broadcast(message, sender);
+
+          case 'IsEating':
+            broadcast(message, sender);
+
+          case 'IsNOTEating':
+            broadcast(message, sender);
         }
 
         print('Received message: $message');
@@ -74,6 +80,12 @@ class WebSocketManager {
       if (otherchannel != channel) {
         otherchannel.sink.add(message);
       }
+    }
+  }
+
+  void broadcastAll(dynamic message) {
+    for (final otherchannel in _channels) {
+      otherchannel.sink.add(message);
     }
   }
 
