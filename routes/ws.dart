@@ -36,11 +36,6 @@ Future<Response> onRequest(RequestContext context) async {
   final handler = webSocketHandler(
     (channel, protocol) {
       print('Connected');
-      //final bloc = context.read<WorldBloc>()..subscribe(channel);
-
-      // Send Message
-      // channel.sink.add('Hello from the server');
-      // channel.sink.add(bloc.state.toString());
 
       // 10초마다 메시지 전송 타이머 설정
       if (!timerStarted) {
