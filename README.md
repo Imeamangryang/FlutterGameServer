@@ -18,8 +18,26 @@ $ dart pub global activate dart_frog_cli
 # 🏁 Start the dev server
 dart_frog dev
 ```
-> 만약 종속성 설치가 안된다면 프로젝트의 파일 이름을 영어 소문자로 변경하세요.  
+> 만약 종속성 설치가 안된다면 프로젝트의 파일 이름을 영어 소문자로 변경하세요. 
 
+
+**Hive DB**
+![캡123처](https://github.com/Imeamangryang/FlutterGameServer/assets/100024733/213024a0-4d82-42ff-816f-9daeb45d0b9a)
+
+```
+database 폴더 내에 Command Prompt를 열어 아래 명령어 실행.
+
+# 종속성 설치
+$ flutter packages get
+
+# 실행
+$ flutter run
+
+혹은
+
+database/build/windows/x64/runner/Release/database.exe 실행
+
+```
 
 [license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license_link]: https://opensource.org/licenses/MIT
